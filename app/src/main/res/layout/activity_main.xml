@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/main_menu"
+        app:headerLayout="@layout/header_layout"
+        android:background="#ffccbc"/>
+</android.support.v4.widget.DrawerLayout>
+=======
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" AUDIO"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:id="@+id/audio_text"
+        android:background="@drawable/background_card_header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_layout_one"
+        android:background="@drawable/background_card_footer"
+        android:layout_below="@+id/audio_text"
+        android:gravity="center">
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:text=""
+        android:id="@+id/start"
+        android:onClick="playAudio"
+        android:background="@drawable/start_audio"/>
+
+</LinearLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/video_text"
+    android:text=" VIDEO"
+    android:textColor="#fff"
+    android:textSize="25dp"
+    android:layout_below="@id/linear_layout_one"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/background_card_header"
+    android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_layout_three"
+        android:layout_below="@+id/video_text"
+        android:background="@drawable/background_card_footer"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""
+            android:id="@+id/start_video"
+            android:onClick="playVideo"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/start_video"/>
+
+    </LinearLayout>
+
+    <SurfaceView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/surface_view"
+        android:layout_below="@+id/linear_layout_three"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/surface_view"
+        android:layout_marginTop="35dp"
+        android:text="All Records"
+        android:textSize="20dp"
+        android:background="#70299b2f"/>
+
+</RelativeLayout>
+</ScrollView>
+>>>>>>> d8e9278e074ac9628eaf480830e8755de3c516ee

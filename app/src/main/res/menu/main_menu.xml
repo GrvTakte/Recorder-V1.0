@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/home"/>
+
+        <item android:id="@+id/nav_save_record"
+                android:title="Saved record"
+            android:icon="@drawable/saved_record"/>
+
+        <item android:id="@+id/nav_schedule_record"
+            android:title="Schedule record"
+            android:icon="@drawable/schedule_record"/>
+
+        <item android:id="@+id/nav_about_us"
+            android:title="About us"
+            android:icon="@drawable/about_us"/>
+    </group>
+</menu>

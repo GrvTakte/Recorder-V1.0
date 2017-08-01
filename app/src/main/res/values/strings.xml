@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Recorder</string>
+<<<<<<< HEAD
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+=======
+>>>>>>> d8e9278e074ac9628eaf480830e8755de3c516ee
+</resources>
